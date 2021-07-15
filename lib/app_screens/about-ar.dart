@@ -1135,31 +1135,45 @@ class AboutAr extends StatelessWidget {
                                       letterSpacing: 1
                                     ),
                                   ),
-                                  TextButton(
-                                    onPressed: (){
-                                      Navigator.push(context, MaterialPageRoute(builder:(context) => PrivacyAr()));
-                                    },
-                                    child: Text(
-                                      'سياسة الخصوصية',
-                                      style: TextStyle(
-                                        color: Colors.grey[400],
-                                        fontFamily: 'Arabic',
-                                        fontSize: 20,
-                                        letterSpacing: 1
+                                  Container(
+                                    alignment: Alignment.centerRight,
+                                    child: RawMaterialButton(
+                                      constraints: BoxConstraints(),
+                                      padding: EdgeInsets.all(0),
+                                      onPressed: (){
+                                        Navigator.push(context, MaterialPageRoute(builder: (context) => PrivacyAr()));
+                                      }, 
+                                      child: Text(
+                                        'سياسة الخصوصية',
+                                        style: TextStyle(
+                                          fontFamily: 'Arabic',
+                                          fontSize: 20,
+                                          letterSpacing: 1,
+                                          color: Colors.grey[400]
+                                        ),
+                                        textAlign: TextAlign.start,
                                       ),
                                     ),
                                   ),
-                                  TextButton(
-                                    onPressed: (){
-                                      Navigator.push(context, MaterialPageRoute(builder:(context) => TermsAr()));
-                                    },
-                                    child: Text(
-                                      'شروط الخدمة',
-                                      style: TextStyle(
-                                        color: Colors.grey[400],
-                                        fontFamily: 'Arabic',
-                                        fontSize: 20,
-                                        letterSpacing: 1
+                                  Container(
+                                    margin: EdgeInsets.symmetric(horizontal: 0),
+                                    padding: EdgeInsets.symmetric(horizontal: 0),
+                                    alignment: Alignment.centerRight,
+                                    child: RawMaterialButton(
+                                      constraints: BoxConstraints(),
+                                      padding: EdgeInsets.all(0),
+                                      onPressed: (){
+                                        Navigator.push(context, MaterialPageRoute(builder: (context) => TermsAr()));
+                                      }, 
+                                      child: Text(
+                                        'شروط الخدمة',
+                                        style: TextStyle(
+                                          fontFamily: 'Arabic',
+                                          fontSize: 20,
+                                          letterSpacing: 1,
+                                          color: Colors.grey[400]
+                                        ),
+                                        textAlign: TextAlign.start,
                                       ),
                                     ),
                                   ),
@@ -1212,7 +1226,7 @@ class AboutAr extends StatelessWidget {
                                             controller: subscriberController,
                                             style: TextStyle(color: Colors.white,fontSize: 10),
                                             decoration: InputDecoration(
-                                              labelText: "Email",
+                                              labelText: "بريد إلكتروني",
                                               labelStyle: TextStyle(
                                                 color: Colors.white,
                                                 fontSize: 20
@@ -1241,7 +1255,7 @@ class AboutAr extends StatelessWidget {
                                             },
                                             child: FittedBox(
                                               child: Text(
-                                                'SEND',
+                                                'إرسال',
                                                 style: TextStyle(
                                                   color: Colors.white,
                                                   fontSize: 10,
@@ -2476,7 +2490,7 @@ class AboutAr extends StatelessWidget {
                                             controller: subscriberController,
                                             style: TextStyle(color: Colors.white,fontSize: 10),
                                             decoration: InputDecoration(
-                                              labelText: "Email",
+                                              labelText: "بريد إلكتروني",
                                               labelStyle: TextStyle(
                                                 color: Colors.white,
                                                 fontSize: 20
@@ -2505,7 +2519,7 @@ class AboutAr extends StatelessWidget {
                                             },
                                             child: FittedBox(
                                               child: Text(
-                                                'SEND',
+                                                'إرسال',
                                                 style: TextStyle(
                                                   color: Colors.white,
                                                   fontSize: 10,
@@ -3758,6 +3772,7 @@ class AboutAr extends StatelessWidget {
                                                   fontSize: 20,
                                                   letterSpacing: 1
                                                 ),
+                                                textAlign: TextAlign.start,
                                               ),
                                             ),
                                             TextButton(
@@ -3772,6 +3787,7 @@ class AboutAr extends StatelessWidget {
                                                   fontSize: 20,
                                                   letterSpacing: 1
                                                 ),
+                                                textAlign: TextAlign.start,
                                               ),
                                             ),
                                             Text(
@@ -3828,7 +3844,7 @@ class AboutAr extends StatelessWidget {
                                                       style: TextStyle(color: Colors.white,fontSize: 10),
                                                       decoration: InputDecoration(
                                                         
-                                                        labelText: "Email",
+                                                        labelText: "بريد إلكتروني",
                                                         labelStyle: TextStyle(
                                                           color: Colors.white,
                                                           fontSize: 15
@@ -3858,7 +3874,7 @@ class AboutAr extends StatelessWidget {
                                                       child: Container(
                                                         child: FittedBox(
                                                           child: Text(
-                                                            'SEND',
+                                                            'إرسال',
                                                             style: TextStyle(
                                                               color: Colors.white,
                                                               fontSize: 10,

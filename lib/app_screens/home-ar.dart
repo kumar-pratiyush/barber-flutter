@@ -1537,39 +1537,20 @@ class HomeAr extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Text(
-                                    'يكتشف',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 25,
-                                      fontFamily: 'Arabic',
-                                      letterSpacing: 2
-                                    ),
-                                  ),
-                                  Text(
-                                    'بسكويت',
-                                    style: TextStyle(
-                                      color: Colors.grey[400],
-                                      fontFamily: 'Arabic',
-                                      fontSize: 20,
-                                      letterSpacing: 1
-                                    ),
-                                  ),
-                                  Text(
-                                    'حول',
-                                    style: TextStyle(
-                                      color: Colors.grey[400],
-                                      fontFamily: 'Arabic',
-                                      fontSize: 20,
-                                      letterSpacing: 1
-                                    ),
-                                  ),
-                                  TextButton(
-                                    onPressed: (){
-                                      Navigator.push(context, MaterialPageRoute(builder:(context) => PrivacyAr()));
-                                    },
+                                  Container(
                                     child: Text(
-                                      'سياسة الخصوصية',
+                                      'يكتشف',
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 25,
+                                        fontFamily: 'Arabic',
+                                        letterSpacing: 2
+                                      ),
+                                    ),
+                                  ),
+                                  Container(
+                                    child: Text(
+                                      'بسكويت',
                                       style: TextStyle(
                                         color: Colors.grey[400],
                                         fontFamily: 'Arabic',
@@ -1578,12 +1559,9 @@ class HomeAr extends StatelessWidget {
                                       ),
                                     ),
                                   ),
-                                  TextButton(
-                                    onPressed: (){
-                                      Navigator.push(context, MaterialPageRoute(builder:(context) => TermsAr()));
-                                    },
+                                  Container(
                                     child: Text(
-                                      'شروط الخدمة',
+                                      'حول',
                                       style: TextStyle(
                                         color: Colors.grey[400],
                                         fontFamily: 'Arabic',
@@ -1592,13 +1570,58 @@ class HomeAr extends StatelessWidget {
                                       ),
                                     ),
                                   ),
-                                  Text(
-                                    'التراخيص',
-                                    style: TextStyle(
-                                      color: Colors.grey[400],
-                                      fontFamily: 'Arabic',
-                                      fontSize: 20,
-                                      letterSpacing: 1
+                                  Container(
+                                    alignment: Alignment.centerRight,
+                                    child: RawMaterialButton(
+                                      constraints: BoxConstraints(),
+                                      padding: EdgeInsets.all(0),
+                                      onPressed: (){
+                                        Navigator.push(context, MaterialPageRoute(builder: (context) => PrivacyAr()));
+                                      }, 
+                                      child: Text(
+                                        'سياسة الخصوصية',
+                                        style: TextStyle(
+                                          fontFamily: 'Arabic',
+                                          fontSize: 20,
+                                          letterSpacing: 1,
+                                          color: Colors.grey[400]
+                                        ),
+                                        textAlign: TextAlign.start,
+                                      ),
+                                    ),
+                                  ),
+                                  Container(
+                                    margin: EdgeInsets.symmetric(horizontal: 0),
+                                    padding: EdgeInsets.symmetric(horizontal: 0),
+                                    alignment: Alignment.centerRight,
+                                    child: RawMaterialButton(
+                                      constraints: BoxConstraints(),
+                                      padding: EdgeInsets.all(0),
+                                      onPressed: (){
+                                        Navigator.push(context, MaterialPageRoute(builder: (context) => TermsAr()));
+                                      }, 
+                                      child: Text(
+                                        'شروط الخدمة',
+                                        style: TextStyle(
+                                          fontFamily: 'Arabic',
+                                          fontSize: 20,
+                                          letterSpacing: 1,
+                                          color: Colors.grey[400]
+                                        ),
+                                        textAlign: TextAlign.start,
+                                      ),
+                                    ),
+                                  ),
+                                  Container(
+                                    margin: EdgeInsets.symmetric(horizontal: 0),
+                                    child: Text(
+                                      'التراخيص',
+                                      style: TextStyle(
+                                        color: Colors.grey[400],
+                                        fontFamily: 'Arabic',
+                                        fontSize: 20,
+                                        letterSpacing: 1
+                                      ),
                                     ),
                                   ),
                                 ],
@@ -1609,25 +1632,33 @@ class HomeAr extends StatelessWidget {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text(
-                                    'موقعك',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 20,
-                                      fontFamily: 'Arabic',
-                                      letterSpacing: 2
+                                  Container(
+                                    margin: EdgeInsets.symmetric(horizontal: 0),
+                                    child: Text(
+                                      'موقعك',
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 25,
+                                        fontFamily: 'Arabic',
+                                        letterSpacing: 2
+                                      ),
+                                      textAlign: TextAlign.start,
                                     ),
                                   ),
                                   Container(
                                     height: 25,
                                   ),
-                                  Text(
-                                    'اشترك الآن للحصول على التحديثات اليومية',
-                                    style: TextStyle(
-                                      color: Colors.grey[400],
-                                      fontFamily: 'Arabic',
-                                      fontSize: 20,
-                                      letterSpacing: 1
+                                  Container(
+                                    margin: EdgeInsets.symmetric(horizontal: 0),
+                                    child: Text(
+                                      'اشترك الآن للحصول على التحديثات اليومية',
+                                      style: TextStyle(
+                                        color: Colors.grey[400],
+                                        fontFamily: 'Arabic',
+                                        fontSize: 20,
+                                        letterSpacing: 1
+                                      ),
+                                      textAlign: TextAlign.start,
                                     ),
                                   ),
                                   Container(height: 25,),
@@ -1641,10 +1672,10 @@ class HomeAr extends StatelessWidget {
                                             controller: subscriberController,
                                             style: TextStyle(color: Colors.white,fontSize: 10),
                                             decoration: InputDecoration(
-                                              labelText: "Email",
+                                              labelText: "بريد إلكتروني",
                                               labelStyle: TextStyle(
                                                 color: Colors.white,
-                                                fontSize: 20
+                                                fontSize: 18
                                               ),
                                               fillColor: secondColor,
                                               filled: true,
@@ -1670,7 +1701,7 @@ class HomeAr extends StatelessWidget {
                                             },
                                             child: FittedBox(
                                               child: Text(
-                                                'SEND',
+                                                'إرسال',
                                                 style: TextStyle(
                                                   color: Colors.white,
                                                   fontSize: 10,
@@ -3373,7 +3404,7 @@ class HomeAr extends StatelessWidget {
                                             controller: subscriberController,
                                             style: TextStyle(color: Colors.white,fontSize: 10),
                                             decoration: InputDecoration(
-                                              labelText: "Email",
+                                              labelText: "بريد إلكتروني",
                                               labelStyle: TextStyle(
                                                 color: Colors.white,
                                                 fontSize: 20
@@ -3402,7 +3433,7 @@ class HomeAr extends StatelessWidget {
                                             },
                                             child: FittedBox(
                                               child: Text(
-                                                'SEND',
+                                                'إرسال',
                                                 style: TextStyle(
                                                   color: Colors.white,
                                                   fontSize: 10,
@@ -5188,6 +5219,7 @@ class HomeAr extends StatelessWidget {
                                                   fontSize: 20,
                                                   letterSpacing: 1
                                                 ),
+                                                textAlign: TextAlign.start,
                                               ),
                                             ),
                                             TextButton(
@@ -5202,6 +5234,7 @@ class HomeAr extends StatelessWidget {
                                                   fontSize: 20,
                                                   letterSpacing: 1
                                                 ),
+                                                textAlign: TextAlign.start,
                                               ),
                                             ),
                                             Text(
@@ -5258,7 +5291,7 @@ class HomeAr extends StatelessWidget {
                                                       style: TextStyle(color: Colors.white,fontSize: 10),
                                                       decoration: InputDecoration(
                                                         
-                                                        labelText: "Email",
+                                                        labelText: "بريد إلكتروني",
                                                         labelStyle: TextStyle(
                                                           color: Colors.white,
                                                           fontSize: 15
@@ -5288,7 +5321,7 @@ class HomeAr extends StatelessWidget {
                                                       child: Container(
                                                         child: FittedBox(
                                                           child: Text(
-                                                            'SEND',
+                                                            'إرسال',
                                                             style: TextStyle(
                                                               color: Colors.white,
                                                               fontSize: 10,

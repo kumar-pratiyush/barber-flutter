@@ -2413,6 +2413,7 @@ class Services extends StatelessWidget {
                                                 fontSize: 15,
                                                 letterSpacing: 1
                                               ),
+                                              textAlign: TextAlign.start,
                                             ),
                                           ),
                                           TextButton(
@@ -2427,6 +2428,7 @@ class Services extends StatelessWidget {
                                                 fontSize: 15,
                                                 letterSpacing: 1
                                               ),
+                                              textAlign: TextAlign.start,
                                             ),
                                           ),
                                           Text(

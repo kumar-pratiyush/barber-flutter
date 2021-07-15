@@ -1678,6 +1678,7 @@ class Appointment extends StatelessWidget {
                                                 fontSize: 15,
                                                 letterSpacing: 1
                                               ),
+                                              textAlign: TextAlign.start,
                                             ),
                                           ),
                                           TextButton(
@@ -1692,6 +1693,7 @@ class Appointment extends StatelessWidget {
                                                 fontSize: 15,
                                                 letterSpacing: 1
                                               ),
+                                              textAlign: TextAlign.start,
                                             ),
                                           ),
                                           Text(

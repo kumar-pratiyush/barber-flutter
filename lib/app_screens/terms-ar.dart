@@ -494,34 +494,48 @@ class TermsAr extends StatelessWidget {
                                         letterSpacing: 1
                                       ),
                                     ),
-                                    TextButton(
+                                    Container(
+                                    alignment: Alignment.centerRight,
+                                    child: RawMaterialButton(
+                                      constraints: BoxConstraints(),
+                                      padding: EdgeInsets.all(0),
                                       onPressed: (){
-                                        Navigator.push(context, MaterialPageRoute(builder:(context) => PrivacyAr()));
-                                      },
+                                        Navigator.push(context, MaterialPageRoute(builder: (context) => PrivacyAr()));
+                                      }, 
                                       child: Text(
                                         'سياسة الخصوصية',
                                         style: TextStyle(
-                                          color: Colors.grey[400],
                                           fontFamily: 'Arabic',
                                           fontSize: 20,
-                                          letterSpacing: 1
+                                          letterSpacing: 1,
+                                          color: Colors.grey[400]
                                         ),
+                                        textAlign: TextAlign.start,
                                       ),
                                     ),
-                                    TextButton(
+                                  ),
+                                  Container(
+                                    margin: EdgeInsets.symmetric(horizontal: 0),
+                                    padding: EdgeInsets.symmetric(horizontal: 0),
+                                    alignment: Alignment.centerRight,
+                                    child: RawMaterialButton(
+                                      constraints: BoxConstraints(),
+                                      padding: EdgeInsets.all(0),
                                       onPressed: (){
-                                        Navigator.push(context, MaterialPageRoute(builder:(context) => TermsAr()));
-                                      },
+                                        Navigator.push(context, MaterialPageRoute(builder: (context) => TermsAr()));
+                                      }, 
                                       child: Text(
                                         'شروط الخدمة',
                                         style: TextStyle(
-                                          color: Colors.grey[400],
                                           fontFamily: 'Arabic',
                                           fontSize: 20,
-                                          letterSpacing: 1
+                                          letterSpacing: 1,
+                                          color: Colors.grey[400]
                                         ),
+                                        textAlign: TextAlign.start,
                                       ),
                                     ),
+                                  ),
                                     Text(
                                       'التراخيص',
                                       style: TextStyle(
@@ -543,7 +557,7 @@ class TermsAr extends StatelessWidget {
                                       'موقعك',
                                       style: TextStyle(
                                         color: Colors.white,
-                                        fontSize: 20,
+                                        fontSize: 25,
                                         fontFamily: 'Arabic',
                                         letterSpacing: 2
                                       ),
@@ -571,7 +585,7 @@ class TermsAr extends StatelessWidget {
                                               controller: subscriberController,
                                               style: TextStyle(color: Colors.white,fontSize: 10),
                                               decoration: InputDecoration(
-                                                labelText: "Email",
+                                                labelText: "بريد إلكتروني",
                                                 labelStyle: TextStyle(
                                                   color: Colors.white,
                                                   fontSize: 20
@@ -600,7 +614,7 @@ class TermsAr extends StatelessWidget {
                                               },
                                               child: FittedBox(
                                                 child: Text(
-                                                  'SEND',
+                                                  'إرسال',
                                                   style: TextStyle(
                                                     color: Colors.white,
                                                     fontSize: 10,
@@ -978,7 +992,7 @@ class TermsAr extends StatelessWidget {
                                               controller: subscriberController,
                                               style: TextStyle(color: Colors.white,fontSize: 10),
                                               decoration: InputDecoration(
-                                                labelText: "Email",
+                                                labelText: "بريد إلكتروني",
                                                 labelStyle: TextStyle(
                                                   color: Colors.white,
                                                   fontSize: 20
@@ -1007,7 +1021,7 @@ class TermsAr extends StatelessWidget {
                                               },
                                               child: FittedBox(
                                                 child: Text(
-                                                  'SEND',
+                                                  'إرسال',
                                                   style: TextStyle(
                                                     color: Colors.white,
                                                     fontSize: 10,
@@ -1340,6 +1354,7 @@ class TermsAr extends StatelessWidget {
                                                     fontSize: 20,
                                                     letterSpacing: 1
                                                   ),
+                                                  textAlign: TextAlign.start,
                                                 ),
                                               ),
                                               TextButton(
@@ -1354,6 +1369,7 @@ class TermsAr extends StatelessWidget {
                                                     fontSize: 20,
                                                     letterSpacing: 1
                                                   ),
+                                                  textAlign: TextAlign.start,
                                                 ),
                                               ),
                                               Text(
@@ -1410,7 +1426,7 @@ class TermsAr extends StatelessWidget {
                                                         style: TextStyle(color: Colors.white,fontSize: 10),
                                                         decoration: InputDecoration(
                                                           
-                                                          labelText: "Email",
+                                                          labelText: "بريد إلكتروني",
                                                           labelStyle: TextStyle(
                                                             color: Colors.white,
                                                             fontSize: 15
@@ -1440,7 +1456,7 @@ class TermsAr extends StatelessWidget {
                                                         child: Container(
                                                           child: FittedBox(
                                                             child: Text(
-                                                              'SEND',
+                                                              'إرسال',
                                                               style: TextStyle(
                                                                 color: Colors.white,
                                                                 fontSize: 10,

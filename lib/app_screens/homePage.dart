@@ -1540,6 +1540,7 @@ class homeScreen extends StatelessWidget {
                                       fontSize: 20,
                                       letterSpacing: 1
                                     ),
+                                    textAlign: TextAlign.start,
                                   ),
                                 ),
                                 TextButton(
@@ -1554,6 +1555,7 @@ class homeScreen extends StatelessWidget {
                                       fontSize: 20,
                                       letterSpacing: 1
                                     ),
+                                    textAlign: TextAlign.start,
                                   ),
                                 ),
                                 Text(
@@ -5066,6 +5068,7 @@ class homeScreen extends StatelessWidget {
                                                 fontSize: 15,
                                                 letterSpacing: 1
                                               ),
+                                              textAlign: TextAlign.start,
                                             ),
                                           ),
                                           TextButton(
@@ -5080,6 +5083,7 @@ class homeScreen extends StatelessWidget {
                                                 fontSize: 15,
                                                 letterSpacing: 1
                                               ),
+                                              textAlign: TextAlign.start,
                                             ),
                                           ),
                                           Text(
